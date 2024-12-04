@@ -1,0 +1,138 @@
+/*Futura Font*/
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Noto+Serif+JP:wght@200..900&display=swap');
+
+
+@import url('https://fonts.cdnfonts.com/css/futura-std-4');
+
+/*Desktop footer*/
+body {
+    margin: 0;
+    background-color: #1b1b1d;
+    color: white;
+}
+
+div.footer-get-in-touch {
+    margin: 10px 0px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+div.footer-content {
+    margin-left: 144px;
+    margin-right: 144px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+div.footer-first-layer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.menu {
+    display: flex;
+}
+
+a.menu-item {
+    color: white;
+    font-family: 'Futura Std', sans-serif;
+    font-weight: 400;
+
+    font-size: 18px;
+    text-decoration: none;
+}
+
+a.menu-item:hover {
+    color: #5D9DFE;
+}
+
+a.footer-info {
+    color: white;
+    font-family: 'Futura Std', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+div.footer-info {
+    margin-right: 35px;
+
+}
+
+a.footer-info:hover {
+    color: #5D9DFE;
+}
+
+div.footer-info-menu {
+    display: flex;
+    margin-top: 60px;
+}
+
+p.copyright {
+    color: white;
+    font-family: 'Futura Std', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+/*End of desktop footer*/
+
+@media screen and (max-width: 600px) {
+
+    /*Mobile footer*/
+    div.footer-first-layer {
+        display: block;
+
+    }
+
+    div.footer-content {
+        margin-left: 22px;
+        margin-right: 22px;
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+
+    div.footer-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px;
+    }
+
+    div.menu {
+        display: block;
+        text-align: center;
+    }
+
+    div.menu-content {
+        margin: 10px 0px;
+    }
+
+    div.footer-get-in-touch-mob {
+        margin: 30px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    div.footer-info-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4px 0px;
+    }
+
+    div.footer-info {
+        margin: 0;
+        margin: 5px 10px;
+    }
+
+    div.copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
