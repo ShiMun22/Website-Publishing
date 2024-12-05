@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Noto+Serif+JP:wght@200..900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/futura-std-4');
+
+body {
+    margin: 0;
+    background-color: #1b1b1d;
+    color: white;
+}
+
+/*news details content*/
+div.newsdetails-banner-img1 {
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.1), rgb(27, 27, 29, 1)), url("img/newsdetails-images/Ado-newsdetails-banner-wfilter.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: 45%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+h1.heading {
+    font-size: 48px;
+    margin: 0px;
+    padding: 0px;
+}
+
+h3.subheading {
+    font-size: 32px;
+    margin: 0px;
+    padding: 15px;
+}
+
+div.release-label-date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    gap: 15px;
+    padding-bottom: 10px;
+}
+
+h4.label {
+    margin: 0px;
+    font-family: 'Futura Std', sans-serif;
+    font-weight: 650;
+    background-color: #5D9DFE;
+    padding: 10px 20px;
+
+}
+
+h4.date {
+    font-family: 'Futura Std', sans-serif;
+    font-weight: 400;
+}
+
+/*info*/
+
+div.info {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30PX;
+    display: flex;
+    flex: 1;
+    gap: 30px;
+    align-items: center;
+}
+
+div.details-live {
+    display: flex;
+    flex: 1;
+
+}
+
+div.details-description {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+}
+
+.description {
+    padding: 0px;
+}
+
+h3.details-live-title {
+    font-size: 47px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+
+}
+
+h4.details-live-subtitle {
+    font-family: 'Futura Std', sans-serif;
+    font-weight: 650;
+    font-size: 22px;
+    margin: 15px;
+}
+
+ul.details-points {
+    font-family: 'Futura Std', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    margin: 0px;
+}
+
+/*product version*/
+div.product-section1 {
+    background-image: linear-gradient(to top, #1b1b1d, #07175d, #1b1b1d);
+    margin-top: 60px;
+}
+
+div.product {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h3.details-title {
+    font-size: 47px;
+    text-align: center;
+}
+
+div.blu-ray {
+    font-family: 'Futura Std', sans-serif;
+    background-color: #1b1b1d;
+    border: 1px solid white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h4.ver-title {
+    font-weight: 650;
+    font-size: 22px;
+}
+
+div.price {
+    display: flex;
+    gap: 10px;
+}
+
+h5.price {
+    font-weight: 400;
+    font-size: 22px;
+}
+
+h5.value {
+    font-weight: 650;
+    font-size: 22px;
+}
+
+.product-info {
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.first-limited-edition {
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    h3.details-live-title {
+        font-size: 36px;
+        margin-bottom: 20px;
+
+    }
+
+    h4.details-live-subtitle {
+        font-size: 18px;
+        margin: 15px;
+    }
+
+    ul.details-points {
+        font-size: 18px;
+        margin: 0px;
+    }
+
+
+}
+
+@media screen and (max-width: 900px) {
+    div.info {
+        flex-direction: column;
+    }
+
+    h3.details-live-title {
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    /*news details content*/
+    div.newsdetails-banner-img1 {
+        display: none;
+    }
+
+    div.newsdetails-banner-img1 {
+        background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgb(27, 27, 29, 1)), url("img/newsdetails-images/Ado-newsdetails-banner-wfilter-mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+    }
+
+    header {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    h1.heading {
+        font-size: 42px;
+    }
+
+    h3.subheading {
+        font-size: 28px;
+        padding: 15px;
+    }
+
+
+
+}
