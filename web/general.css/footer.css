@@ -1,17 +1,18 @@
-/*Futura Font*/
 @import url('https://fonts.cdnfonts.com/css/futura-std-4');
-
-/*Desktop footer*/
-* {
-    background-color: #1b1b1d;
-}
 
 body {
     margin: 0;
-    background-color: black;
-
+    background-color: #1b1b1d;
+    color: white;
 }
 
+/*footer*/
+footer {
+    font-family: 'Futura Std', sans-serif;
+    background-color: black;
+    color: white;
+    padding: 15px 0px 20px 0px;
+}
 
 a {
     text-decoration: none;
@@ -21,8 +22,8 @@ a {
 div.footer-content {
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
 div.footer-first-layer {
@@ -37,10 +38,7 @@ div.menu {
 }
 
 a.menu-item {
-    color: white;
-    font-family: 'Futura Std', sans-serif;
     font-weight: 400;
-
     font-size: 18px;
     text-decoration: none;
 }
@@ -68,8 +66,6 @@ a.menu-item:hover {
 }
 
 a.footer-info {
-    color: white;
-    font-family: 'Futura Std', sans-serif;
     font-weight: 400;
     font-size: 16px;
     text-decoration: none;
@@ -86,20 +82,32 @@ a.footer-info:hover {
 
 div.footer-info-menu {
     display: flex;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 p.copyright {
-    color: white;
-    font-family: 'Futura Std', sans-serif;
     font-weight: 400;
     font-size: 15px;
 }
 
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 1000px) {
+
+    div.footer-content {
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+    a.menu-item {
+        font-size: 16px;
+    }
+
+    div.menu {
+        gap: 15px;
+    }
+}
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 
     /*Mobile footer*/
     div.footer-first-layer {
@@ -108,10 +116,8 @@ p.copyright {
     }
 
     div.footer-content {
-        margin-left: 22px;
-        margin-right: 22px;
-        margin-top: 45px;
-        margin-bottom: 45px;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     div.footer-logo {
@@ -124,6 +130,10 @@ p.copyright {
     div.menu {
         display: block;
         text-align: center;
+    }
+
+    a.menu-item {
+        font-size: 18px;
     }
 
     div.menu-content {
