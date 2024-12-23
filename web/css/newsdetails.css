@@ -65,7 +65,11 @@ div.information-content {
 
 .details-live-image {
     flex: 1;
-    min-width: 400px;
+    min-width: 350px;
+}
+
+img.details-live-image {
+    min-width: 200px;
 }
 
 div.details-description {
@@ -233,7 +237,10 @@ div.notes-content {
     display: flex;
     gap: 35px;
     align-items: center;
+}
 
+.notes-description {
+    padding: 0px 40px;
 }
 
 .notes-heading {
@@ -243,11 +250,17 @@ div.notes-content {
 
 .ado-shop {
     margin-top: 35px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 8px;
 }
 
 a.to-ado-shop {
-    color: #5D9DFE;
+    font-family: 'Futura Std', sans-serif;
     font-size: clamp(20px, 4vw, 26px);
+    font-weight: 650;
+    color: #5D9DFE;
     text-decoration: underline;
 }
 
@@ -256,8 +269,6 @@ a.to-ado-shop:hover {
 }
 
 @media screen and (max-width: 1024px) {
-
-
 
     /*live*/
     ul.details-points {
@@ -284,6 +295,16 @@ a.to-ado-shop:hover {
         margin: 0px;
     }
 
+    /*notes*/
+    .ado-shop {
+        display: block;
+        align-items: start;
+        text-align: start;
+    }
+
+    a.to-ado-shop {
+        font-size: clamp(18px, 3.8vw, 24px);
+    }
 
 
 }
@@ -370,6 +391,16 @@ a.to-ado-shop:hover {
         flex-direction: column-reverse;
     }
 
+    a.to-ado-shop {
+        font-size: clamp(18px, 3.5vw, 22px);
+    }
+
+    .ado-shop {
+        display: flex;
+        text-align: center;
+        align-items: center;
+
+    }
 
 }
 
@@ -385,6 +416,7 @@ a.to-ado-shop:hover {
 
     }
 
+    /*product*/
     div.price {
         display: block;
     }
@@ -399,6 +431,9 @@ a.to-ado-shop:hover {
         margin: 0px;
     }
 
-
+    /*notes*/
+    a.to-ado-shop {
+        font-size: clamp(16px, 3vw, 20px);
+    }
 
 }
