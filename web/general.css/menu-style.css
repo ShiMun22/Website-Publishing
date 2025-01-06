@@ -61,16 +61,20 @@ nav .navbar {
 
 .social {
     display: flex;
-    column-gap: 10px;
+    column-gap: clamp(5px, 2vw, 10px);
 }
 
 .social i {
-    font-size: 30px;
+    font-size: clamp(25px, 5vw, 30px);
 }
 
 .social i:hover {
     color: #5D9DFE;
     transition: color 0.3s ease;
+}
+
+.social.sidebar-social {
+    display: none;
 }
 
 nav .navbar .nav-links .links li a:hover {
@@ -90,7 +94,7 @@ nav .navbar .nav-links .links li {
     display: flex;
     align-items: center;
     list-style: none;
-    padding: 0 14px;
+    padding: 0 clamp(8px, 5vw, 20px);
 }
 
 nav .navbar .nav-links .links li a {
@@ -98,7 +102,6 @@ nav .navbar .nav-links .links li a {
     height: 100%;
     font-size: 16px;
 }
-
 
 nav .navbar .nav-links .links li .arrow {
     height: 100%;
@@ -116,7 +119,7 @@ nav .navbar .nav-links .links li:hover .live-news-arrow {
 .navbar .nav-links .links .submenu {
     position: absolute;
     top: 70px;
-    left: 0;
+    right: 0;
     background-color: #0f0f10;
     width: fit-content;
     line-height: 40px;
@@ -146,7 +149,7 @@ nav .navbar .nav-links .links li:hover .live-news-arrow {
 }
 
 
-@media (max-width:1090px) {
+@media (max-width:1024px) {
     nav .navbar {
         max-width: 100%;
         padding: 0 45px;
@@ -167,16 +170,13 @@ nav .navbar .nav-links .links li:hover .live-news-arrow {
     .logo {
         line-height: 85px;
     }
-
-    .social i {
-        font-size: 28px;
-    }
 }
 
 @media (max-width:800px) {
     nav .navbar {
         max-width: 100%;
         padding: 0 25px;
+        flex-direction: row-reverse;
     }
 
     nav .navbar .nav-links {
@@ -186,10 +186,10 @@ nav .navbar .nav-links .links li:hover .live-news-arrow {
         height: 100%;
         width: 100%;
         top: 0;
-        left: -100%;
+        right: -100%;
         max-width: 270px;
         padding: 20px;
-        transition: left 0.5s ease-in-out;
+        transition: right 0.5s ease-in-out;
         z-index: 100;
         line-height: 50px;
         font-size: 18px;
@@ -297,21 +297,15 @@ nav .navbar .nav-links .links li:hover .live-news-arrow {
         transform: rotate(180deg);
     }
 
+    .social.navbar-social {
+        display: none;
+    }
+
+    .social.sidebar-social {
+        display: block;
+    }
+
     .social i {
         font-size: 30px;
-    }
-
-    .social {
-        column-gap: 5px;
-    }
-}
-
-@media (max-width:370px) {
-    nav .navbar .nav-links {
-        max-width: 100%;
-    }
-
-    .social i {
-        font-size: 28px;
     }
 }

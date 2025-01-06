@@ -1,0 +1,18 @@
+-webkit-font-smoothing: antialiased;
+font-family: 'Lato',
+'Helvetica Neue',
+'Helvetica',
+Helvetica,
+Arial,
+sans-serif;
+line-height: 1;
+text-rendering: optimizeLegibility;
+color: #fff;
+position: relative;
+display: block;
+box-sizing: border-box;
+user-select: none;
+touch-action: pan-y;
+-webkit-tap-highlight-color: transparent;
+margin: 30px auto 50px;
+margin-bottom: 30px;

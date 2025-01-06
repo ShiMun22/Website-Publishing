@@ -1,0 +1,570 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /*height*/
+    --hero-height: clamp(500px, 60vh, 900px);
+    --view-height: clamp(900px, 80vh, 900px);
+    --banner-height: clamp(430px, 40vh, 600px);
+    --ticker-height: clamp(750px, 70vh, 900px);
+    /*color*/
+    --font-color: white;
+    --background-color: #1b1b1d;
+    --accent-color: #5D9DFE;
+    --main-color-blue: #07165b;
+    --main-color-red: #9F1C07;
+    --backgound-cover: hsla(240, 4%, 11%, 0.621);
+
+    /*padding*/
+    --view-padding: clamp(30px, 5vh, 40px);
+}
+
+.live-details-font-title,
+.ticket-title,
+.comment-title,
+.font-title h4,
+h4.font-title,
+.font-title h3,
+h3.font-title,
+.font-body h1,
+h1.font-body,
+.font-body h2,
+h2.font-body,
+.font-body h3,
+h3.font-body,
+.font-body h5,
+h5.font-body,
+.font-body h6,
+h6.font-body {
+    margin: 0px;
+}
+
+/*breadcrumb*/
+li.the-on-page.phone {
+    display: none;
+}
+
+li.the-on-page.phone-320px {
+    display: none;
+}
+
+/*live-details-title*/
+.live-details-title {
+    min-height: var(--hero-height);
+    background-image: url(../img/live-details-images/live-details-hibana.jpeg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: -250px;
+    background-repeat: no-repeat;
+}
+
+.title-g {
+    background-color: var(--backgound-cover);
+    min-height: var(--hero-height);
+    width: 100%;
+}
+
+.title-c {
+    position: relative;
+    top: 65px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.live-details-font-title,
+.font-title h4,
+h4.font-title {
+    text-transform: uppercase;
+}
+
+/*tour-overview*/
+.tour-overview-r {
+    height: var(--view-height);
+}
+
+.tour-overview-c {
+    height: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(10px, 5%, 20px);
+    padding-top: var(--view-padding);
+    padding-bottom: var(--view-padding);
+}
+
+.text-section {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.info-item {
+    display: flex;
+    gap: clamp(10px, 5%, 20px);
+}
+
+.text-section .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.text-section .font-title h2,
+.text-section h2.font-title {
+    padding-bottom: 5%;
+}
+
+.info .info-item {
+    padding-bottom: 20%;
+}
+
+.info-item-text-title {
+    font-weight: 650;
+}
+
+
+.info-item-text-body,
+.comment-text-body,
+.ticket-card-body,
+.font-body h2,
+h2.font-body,
+.font-body h3,
+h3.font-body {
+    font-weight: 400;
+}
+
+.video-container {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lazy-video {
+    display: none;
+}
+
+.lazy-video.show {
+    display: block;
+}
+
+/*comment*/
+.comment {
+    min-height: var(--banner-height);
+    background-image: url(../img/live-details-images/live-details-comment-background.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.comment-g {
+    min-height: var(--banner-height);
+    background-color: var(--backgound-cover);
+}
+
+
+.comment-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-c {
+    justify-content: center;
+}
+
+.comment-text {
+    gap: clamp(15px, 5%, 20px);
+    text-align: center;
+}
+
+/*Ticket Information*/
+.ticket-r {
+    min-height: var(--ticker-height);
+    height: auto;
+}
+
+.ticket-c {
+    min-height: var(--ticker-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: var(--view-padding);
+    padding-bottom: var(--view-padding);
+}
+
+.ticket-title {
+    padding-bottom: clamp(25px, 5vh, 30px);
+}
+
+.ticket-card-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 20px;
+    row-gap: clamp(10px, 5vh, 20px);
+}
+
+.ticket-card {
+    background-color: var(--main-color-blue);
+    height: auto;
+    padding: clamp(15px, 5vw, 20px);
+}
+
+.ticket-card-text-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ticket-card-icon {
+    max-width: 80px;
+    width: 100%;
+    display: inline-block;
+    background-color: var(--background-color);
+    width: fit-content;
+    padding: clamp(5px, 5vw, 8px);
+    border: var(--font-color) 2px solid;
+}
+
+.ticket-card-title {
+    padding-top: clamp(10px, 5vh, 15px);
+}
+
+.ticket-card-title {
+    font-weight: 650;
+}
+
+.ticket-card-text-box-info {
+    flex: 1;
+}
+
+.ticket-responsive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: clamp(20px, 3%, 30px);
+}
+
+/*note*/
+.note {
+    min-height: var(--banner-height);
+    background-image: url(../img/live-details-images/live-details-note-background-images.jpg);
+    background-size: cover;
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: bottom;
+}
+
+.note-g {
+    background-color: var(--backgound-cover);
+    min-height: var(--banner-height);
+}
+
+.note-c {
+    min-height: var(--banner-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: var(--view-padding);
+    padding-bottom: var(--view-padding);
+}
+
+.note-row {
+    height: fit-content;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.column-gap {
+    padding-right: clamp(10px, 5vw, 20px);
+}
+
+
+.note-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.note-icon {
+    max-width: 80px;
+}
+
+.note-icon-disabled {
+    max-width: 85px;
+}
+
+.note-breif {
+    font-weight: 300;
+}
+
+/*details*/
+.details {
+    background-image: url(../img/live-details-images/live-details-details-background-images.jpeg);
+    min-height: var(--hero-height);
+    background-size: cover;
+    background-position-y: -500px;
+    background-position-x: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.details-g {
+    background-image: linear-gradient(to left, hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.957), hsla(240, 4%, 11%, 0.403), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
+    min-height: var(--hero-height);
+}
+
+.details-c {
+    min-height: var(--hero-height);
+    padding-top: var(--view-padding);
+    padding-bottom: var(--view-padding);
+    display: flex;
+    justify-content: end;
+    margin: auto;
+}
+
+.details-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    max-width: 500px;
+    row-gap: 20px;
+    min-height: fit-content;
+}
+
+.detail-title {
+    margin-bottom: clamp(15px, 5vh, 20px);
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-box1 {
+    margin-bottom: clamp(10px, 5vh, 15px);
+}
+
+@media screen and (max-width:1090px) {
+    .comment-text {
+        gap: clamp(4px, 5%, 8px);
+    }
+}
+
+@media screen and (max-width:1024px) {
+    :root {
+        /*height*/
+        --ticker-height: clamp(990px, 70vh, 1000px);
+    }
+
+    .live-details-title {
+        background-position-x: center;
+        background-position-y: -100px;
+    }
+
+    /*comment*/
+    .comment-text {
+        gap: clamp(15px, 5%, 20px);
+    }
+
+    /*details*/
+    .details {
+        background-position-y: -300px;
+        background-position-x: center;
+    }
+
+    .details-g {
+        background-image: linear-gradient(to left, hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.971), hsla(240, 4%, 11%, 0.971), hsla(240, 4%, 11%, 0.971), hsla(240, 4%, 11%, 0.403), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
+    }
+}
+
+@media screen and (max-width:800px) {
+    :root {
+        --ticker-height: clamp(990px, 70vh, 1000px);
+    }
+
+    /*tour-overview*/
+    .live-details-title {
+        background-position-x: center;
+        background-position-y: -100px;
+        background-size: 150%;
+    }
+
+    .tour-overview-c {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .video-container {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+
+    .text-section {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .info .info-item {
+        padding-bottom: 5%;
+    }
+
+    /*ticket*/
+    .ticket-card-icon {
+        max-width: 70px;
+        width: 100%;
+        padding: clamp(5px, 5vw, 8px);
+    }
+
+    .ticket-card {
+        padding: clamp(8px, 5vw, 10px);
+    }
+
+    /*note*/
+    .note {
+        background-size: 150%;
+        background-position-x: center;
+        background-position-y: center;
+    }
+
+    /*details*/
+    .details {
+        background-position-y: top;
+    }
+
+    .details-g {
+        background-image: linear-gradient(to bottom, hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.957), hsla(240, 4%, 11%, 0.403), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
+        height: var(--hero-height);
+    }
+
+    .details-c {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 90vh;
+    }
+
+    .details-text {
+        max-width: 1000px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    :root {
+        --ticker-height: clamp(980px, 70vh, 1000px);
+    }
+
+    /*breadcrumb*/
+    li.the-on-page.desktop {
+        display: none;
+    }
+
+    li.the-on-page.phone {
+        display: inline-block;
+    }
+
+    /*title*/
+    .live-details-title {
+        background-position-y: 60px;
+    }
+
+    .text-section .info {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: clamp(10px, 5%, 20px);
+    }
+
+    /*ticket*/
+    .ticket-card-icon {
+        max-width: 60px;
+        width: 100%;
+        padding: clamp(5px, 5vw, 8px);
+    }
+
+    .ticket-card-row {
+        grid-template-columns: 1fr;
+        gap: clamp(10px, 5vh, 15px);
+    }
+
+    .ticket-card {
+        padding: clamp(5px, 5vw, 10px);
+    }
+
+
+    /*note*/
+    .note {
+        background-size: 250%;
+    }
+
+    .note-c {
+        padding-top: clamp(40px, 5vh, 45px);
+        padding-bottom: clamp(40px, 5vh, 45px);
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: clamp(20px, 5vh, 25px);
+    }
+
+    .column-gap {
+        padding-right: 0px;
+    }
+
+    .note-icon {
+        max-width: 60px;
+    }
+
+    .note-icon-disabled {
+        max-width: 65px;
+    }
+
+    /*details*/
+    .details {
+        background-position-y: 160px;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+
+    /*breadcrumb*/
+    li.the-on-page.phone {
+        display: none;
+    }
+
+    li.the-on-page.phone-320px {
+        display: inline-block;
+        width: fit-content;
+    }
+
+    /*note*/
+    .note-icon {
+        max-width: 50px;
+    }
+
+    .note-icon-disabled {
+        max-width: 55px;
+    }
+}

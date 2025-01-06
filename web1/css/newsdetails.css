@@ -1,0 +1,439 @@
+body {
+    margin: 0;
+    background-color: #1b1b1d;
+    color: white;
+}
+
+/*news details content*/
+div.newsdetails-banner-img1 {
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.1), rgb(27, 27, 29, 1)), url("../img/newsdetails-images/Ado-newsdetails-banner-wfilter-cropped.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    background-position: center;
+}
+
+.newsdetails-banner {
+    display: flex;
+    justify-content: center;
+}
+
+
+.newsdetails-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+h6.label {
+    font-weight: 650;
+    background-color: #5D9DFE;
+    padding: 10px 20px;
+    margin: 15px 0px;
+}
+
+h6.date {
+    font-weight: 400;
+    margin: 15px 0px;
+
+}
+
+div.label-date {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+h3.newsdetails-heading {
+    padding: 0px;
+    margin: 0px;
+}
+
+h5.newsdetails-subheading {
+    padding: 15px 0px;
+    margin: 0px;
+}
+
+/*live*/
+div.information-content {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+
+}
+
+.details-live-image {
+    flex: 1;
+    min-width: 350px;
+}
+
+img.details-live-image {
+    min-width: 200px;
+}
+
+div.details-description {
+    flex: 1;
+}
+
+h4.details-heading {
+    padding: 0px;
+    margin: 0px;
+}
+
+h5.details-live-subheading {
+    font-weight: 650;
+    margin: 15px 0px;
+}
+
+ul.details-points {
+    font-family: 'Futura Std', sans-serif;
+    font-weight: 400;
+    font-size: clamp(16px, 3vw, 20px);
+    margin: 0px;
+}
+
+/*product version*/
+div.product-section1 {
+    background-image: linear-gradient(to top, #1b1b1d, #07175d, #1b1b1d);
+    margin-top: 60px;
+}
+
+h4.details-center-heading {
+    text-align: center;
+    padding: 45px 0px;
+    margin: 0px;
+}
+
+.product-info-mobile {
+    display: none;
+}
+
+.product-info {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+div.blu-ray,
+div.dvd {
+    flex: 1;
+    font-family: 'Futura Std', sans-serif;
+    background-color: #1b1b1d;
+    border: 1px solid white;
+    padding: 0px 25px 25px 25px;
+}
+
+div.blu-ray-2,
+div.dvd-2 {
+    flex: 1;
+    font-family: 'Futura Std', sans-serif;
+    background-color: #07175d;
+    border: 1px solid white;
+    padding: 0px 25px 25px 25px;
+}
+
+
+.ver-caption {
+    font-weight: 650;
+    padding: 20px 0px;
+    margin: 0px;
+}
+
+div.price {
+    display: flex;
+    gap: 10px;
+}
+
+h5.price {
+    font-weight: 400;
+    padding: 10px 0px;
+    margin: 0px;
+}
+
+h4.value {
+    font-weight: 650;
+    padding: 10px 0px;
+    margin: 0px;
+}
+
+.tax {
+    font-weight: 300;
+    font-size: clamp(14px, 2.5vw, 16px);
+}
+
+.included {
+    font-weight: 400;
+    padding: 10px 0px;
+    margin: 0px;
+}
+
+img.first-limited {
+    max-width: 35%;
+}
+
+h3.ver-heading {
+    font-weight: 650;
+    text-align: center;
+}
+
+div.product-section2 {
+    margin-top: 100px;
+}
+
+/*feature song*/
+div.featuresong-banner-img1 {
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.2), rgb(27, 27, 29, 1)), linear-gradient(to top, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.2), rgb(27, 27, 29, 1)), url("../img/newsdetails-images/Ado-newsdetails-banner-feature.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 60%;
+    background-position-y: 20%;
+    height: 400px;
+}
+
+.feature-section {
+    margin-top: -140px;
+}
+
+
+.songs {
+    display: flex;
+    gap: 15px;
+}
+
+.song-container {
+    background-color: #1b1b1d;
+    border: 1px solid white;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.song-img {
+    max-width: 100%;
+}
+
+.name {
+    font-weight: 650;
+    padding: 15px 0px 8px 0px;
+    margin: 0px;
+}
+
+.music {
+    font-weight: 400;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+/*notes section*/
+.notes-section {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    margin: 100px 0px 128px 0px;
+}
+
+div.notes-content {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.notes-description {
+    padding: 0px 40px;
+}
+
+.notes-heading {
+    padding: 0px;
+    margin: 20px 0px;
+}
+
+.ado-shop {
+    margin-top: 35px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 8px;
+}
+
+a.to-ado-shop {
+    font-family: 'Futura Std', sans-serif;
+    font-size: clamp(20px, 4vw, 26px);
+    font-weight: 650;
+    color: #5D9DFE;
+    text-decoration: underline;
+}
+
+a.to-ado-shop:hover {
+    color: white;
+}
+
+@media screen and (max-width: 1024px) {
+
+    /*live*/
+    ul.details-points {
+        font-size: clamp(14px, 2.5vw, 18px)
+    }
+
+    /*product*/
+    .ver-caption {
+        padding: 15px 0px 8px 0px;
+        margin: 0px;
+    }
+
+    div.price {
+        display: block;
+    }
+
+    h5.price {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    h4.value {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    /*notes*/
+    .ado-shop {
+        display: block;
+        align-items: start;
+        text-align: start;
+    }
+
+    a.to-ado-shop {
+        font-size: clamp(18px, 3.8vw, 24px);
+    }
+
+
+}
+
+@media screen and (max-width: 800px) {
+    div.newsdetails-banner-img1 {
+        background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgb(27, 27, 29, 1)), url("../img/newsdetails-images/Ado-newsdetails-banner-wfilter-mobile-v2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+        display: block;
+    }
+
+    /*live*/
+    div.information-content {
+        flex-direction: column;
+
+    }
+
+    .details-live-image {
+        max-width: 515px;
+
+    }
+
+    ul.details-points {
+        font-size: clamp(12px, 2.5vw, 16px);
+    }
+
+    /*product*/
+    img.first-limited-mobile {
+        display: flex;
+        width: 50%;
+    }
+
+    div.limited-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-info-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first-limited {
+        display: none;
+    }
+
+    div.product-info {
+        flex: 1;
+    }
+
+    div.price {
+        display: flex;
+        gap: 10px;
+    }
+
+    h5.price {
+        font-weight: 400;
+        padding: 10px 0px;
+        margin: 0px;
+    }
+
+    h4.value {
+        font-weight: 650;
+        padding: 10px 0px;
+        margin: 0px;
+    }
+
+    /*feature song*/
+    .songs {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+
+
+    /*notes*/
+    div.notes-content {
+        flex-direction: column-reverse;
+    }
+
+    a.to-ado-shop {
+        font-size: clamp(18px, 3.5vw, 22px);
+    }
+
+    .ado-shop {
+        display: flex;
+        text-align: center;
+        align-items: center;
+
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    /*news details content*/
+    ul.details-points {
+        font-size: clamp(12px, 2.2vw, 16px);
+    }
+
+    .details-live-image {
+        min-width: 400px;
+
+    }
+
+    /*product*/
+    div.price {
+        display: block;
+    }
+
+    h5.price {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    h4.value {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    /*notes*/
+    a.to-ado-shop {
+        font-size: clamp(16px, 3vw, 20px);
+    }
+
+}

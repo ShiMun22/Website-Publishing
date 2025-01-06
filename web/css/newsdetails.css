@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     background-color: #1b1b1d;
@@ -5,15 +9,16 @@ body {
 }
 
 /*news details content*/
-div.newsdetails-banner-img1 {
-    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.1), rgb(27, 27, 29, 1)), url("../img/newsdetails-images/Ado-newsdetails-banner-wfilter-cropped.jpg");
+div.newsdetails-herobanner-top-img {
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.1), rgb(27, 27, 29, 1)), url("../img/newsdetails-images/Ado-newsdetails-herobanner-top-leftrightadoblankcenter.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 700px;
     background-position: center;
+    margin-top: 50px;
 }
 
-.newsdetails-banner {
+.newsdetails-herobanner {
     display: flex;
     justify-content: center;
 }
@@ -24,25 +29,6 @@ div.newsdetails-banner-img1 {
     flex-direction: column;
     text-align: center;
     align-items: center;
-}
-
-h6.label {
-    font-weight: 650;
-    background-color: #5D9DFE;
-    padding: 10px 20px;
-    margin: 15px 0px;
-}
-
-h6.date {
-    font-weight: 400;
-    margin: 15px 0px;
-
-}
-
-div.label-date {
-    display: flex;
-    align-items: center;
-    gap: 14px;
 }
 
 h3.newsdetails-heading {
@@ -63,25 +49,25 @@ div.information-content {
 
 }
 
-.details-live-image {
+.details-info-image {
     flex: 1;
     min-width: 350px;
 }
 
-img.details-live-image {
+img.details-info-image {
     min-width: 200px;
 }
 
-div.details-description {
+div.details-info-description {
     flex: 1;
 }
 
-h4.details-heading {
+h4.details-info-heading {
     padding: 0px;
     margin: 0px;
 }
 
-h5.details-live-subheading {
+h5.details-info-subheading {
     font-weight: 650;
     margin: 15px 0px;
 }
@@ -118,7 +104,6 @@ h4.details-center-heading {
 div.blu-ray,
 div.dvd {
     flex: 1;
-    font-family: 'Futura Std', sans-serif;
     background-color: #1b1b1d;
     border: 1px solid white;
     padding: 0px 25px 25px 25px;
@@ -127,7 +112,6 @@ div.dvd {
 div.blu-ray-2,
 div.dvd-2 {
     flex: 1;
-    font-family: 'Futura Std', sans-serif;
     background-color: #07175d;
     border: 1px solid white;
     padding: 0px 25px 25px 25px;
@@ -168,7 +152,7 @@ h4.value {
     margin: 0px;
 }
 
-img.first-limited {
+img.shinzou-product {
     max-width: 35%;
 }
 
@@ -182,8 +166,8 @@ div.product-section2 {
 }
 
 /*feature song*/
-div.featuresong-banner-img1 {
-    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.2), rgb(27, 27, 29, 1)), linear-gradient(to top, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.2), rgb(27, 27, 29, 1)), url("../img/newsdetails-images/Ado-newsdetails-banner-feature.jpg");
+div.featurehitsong-banner-img {
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.2), rgb(27, 27, 29, 1)), linear-gradient(to top, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.2), rgb(27, 27, 29, 1)), url("../img/newsdetails-images/Ado-newsdetails-banner-featurehitsong-adoredbg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 60%;
@@ -196,7 +180,7 @@ div.featuresong-banner-img1 {
 }
 
 
-.songs {
+.feature-hit-songs {
     display: flex;
     gap: 15px;
 }
@@ -212,13 +196,13 @@ div.featuresong-banner-img1 {
     max-width: 100%;
 }
 
-.name {
+.song-name {
     font-weight: 650;
     padding: 15px 0px 8px 0px;
     margin: 0px;
 }
 
-.music {
+.music-composer {
     font-weight: 400;
     padding: 0px;
     margin: 0px;
@@ -230,7 +214,7 @@ div.featuresong-banner-img1 {
     display: flex;
     gap: 35px;
     align-items: center;
-    margin: 100px 0px 128px 0px;
+    margin: 100px 0px 50px 0px;
 }
 
 div.notes-content {
@@ -272,7 +256,7 @@ a.to-ado-shop:hover {
 
     /*live*/
     ul.details-points {
-        font-size: clamp(14px, 2.5vw, 18px)
+        font-size: clamp(16px, 2.5vw, 18px)
     }
 
     /*product*/
@@ -298,7 +282,6 @@ a.to-ado-shop:hover {
     /*notes*/
     .ado-shop {
         display: block;
-        align-items: start;
         text-align: start;
     }
 
@@ -310,15 +293,13 @@ a.to-ado-shop:hover {
 }
 
 @media screen and (max-width: 800px) {
-    div.newsdetails-banner-img1 {
-        background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgb(27, 27, 29, 1)), url("../img/newsdetails-images/Ado-newsdetails-banner-wfilter-mobile-v2.jpg");
+    div.newsdetails-herobanner-top-img-mobile {
+        background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgb(27, 27, 29, 1)), url("../img/newsdetails-images/Ado-newsdetails-herobanner-top-leftrightadoblankcenter-mob.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         height: 600px;
-        align-items: center;
-        justify-content: center;
-        background-position: center;
         display: block;
+        margin-top: 80px;
     }
 
     /*live*/
@@ -327,22 +308,22 @@ a.to-ado-shop:hover {
 
     }
 
-    .details-live-image {
+    .details-liveinfo-image {
         max-width: 515px;
 
     }
 
     ul.details-points {
-        font-size: clamp(12px, 2.5vw, 16px);
+        font-size: clamp(16px, 2.5vw, 16px);
     }
 
     /*product*/
-    img.first-limited-mobile {
+    img.shinzou-product-mobile {
         display: flex;
         width: 50%;
     }
 
-    div.limited-container {
+    div.product-info-outer-container {
         display: flex;
         flex-direction: column;
     }
@@ -353,12 +334,13 @@ a.to-ado-shop:hover {
         align-items: center;
     }
 
-    .first-limited {
+    .shinzou-product {
         display: none;
     }
 
     div.product-info {
         flex: 1;
+        align-items: start;
     }
 
     div.price {
@@ -367,19 +349,17 @@ a.to-ado-shop:hover {
     }
 
     h5.price {
-        font-weight: 400;
         padding: 10px 0px;
         margin: 0px;
     }
 
     h4.value {
-        font-weight: 650;
         padding: 10px 0px;
         margin: 0px;
     }
 
     /*feature song*/
-    .songs {
+    .feature-hit-songs {
         display: grid;
         grid-template-columns: auto auto;
         grid-gap: 20px;
@@ -404,19 +384,7 @@ a.to-ado-shop:hover {
 
 }
 
-@media screen and (max-width: 500px) {
-
-    /*news details content*/
-    ul.details-points {
-        font-size: clamp(12px, 2.2vw, 16px);
-    }
-
-    .details-live-image {
-        min-width: 400px;
-
-    }
-
-    /*product*/
+@media screen and (max-width:660px) {
     div.price {
         display: block;
     }
@@ -430,8 +398,60 @@ a.to-ado-shop:hover {
         padding: 0px;
         margin: 0px;
     }
+}
+
+@media screen and (max-width: 500px) {
+
+    /*news details content*/
+    .details-liveinfo-image {
+        min-width: 350px;
+
+    }
+
+    /*product*/
+    div.product-info {
+        display: block;
+    }
+
+    .mobile-margin-bottom {
+        margin-bottom: 15px;
+    }
+
+    div.price {
+        display: flex;
+        gap: 10px;
+    }
+
+    h5.price {
+        padding: 10px 0px;
+
+    }
+
+    h4.value {
+        padding: 10px 0px;
+    }
+
+    .tax {
+        font-weight: 300;
+        font-size: clamp(14px, 2.5vw, 16px);
+    }
+
+    .feature-hit-songs {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 20px;
+    }
+
 
     /*notes*/
+    .notes-description {
+        padding: 0px;
+    }
+
+    .notes-heading {
+        margin: 0px 0px 20px 0px;
+    }
+
     a.to-ado-shop {
         font-size: clamp(16px, 3vw, 20px);
     }

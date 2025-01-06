@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Noto+Serif+JP:wght@200..900&display=swap');
-
-@import url('https://fonts.cdnfonts.com/css/futura-std-4');
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -8,15 +8,15 @@ body {
     color: white;
 }
 
-/*dicography*/
+/*discography*/
 div.discography-banner-img {
-    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.5), rgb(27, 27, 29, 1)), url("../img/dicography-images/Ado-discography-bannner.jpg");
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.5), rgb(27, 27, 29, 1)), url("../img/discography-images/Ado-discography-herobanner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 35%;
     height: 540px;
     display: flex;
-    text-align: center;
+    align-items: center;
     flex-direction: column;
     justify-content: flex-end;
 }
@@ -59,7 +59,7 @@ a.category-item.active {
 
 /*discography content*/
 .discography-content {
-    padding: 35px 0px 35px 0px;
+    padding: 35px 0px;
 }
 
 .discography-section {
@@ -72,7 +72,7 @@ a.category-item.active {
     margin-bottom: 15px;
 }
 
-.artwork-container:hover {
+.artwork-container-interactable:hover {
     background-color: black;
     border: 1px solid white;
 }
@@ -80,6 +80,11 @@ a.category-item.active {
 .artwork-content {
     flex: 1;
     padding: 15px 15px 0px 15px;
+
+}
+
+.discography-description {
+    height: 269px;
 }
 
 a.artwork-link {
@@ -95,25 +100,7 @@ div.artwork-description {
     justify-content: space-between;
     flex-direction: column;
     gap: 35px;
-}
 
-h6.label {
-    font-weight: 650;
-    background-color: #5D9DFE;
-    padding: 10px 20px;
-    margin: 15px 0px;
-}
-
-h6.date {
-    font-weight: 400;
-    margin: 15px 0px;
-
-}
-
-div.label-date {
-    display: flex;
-    align-items: center;
-    gap: 14px;
 }
 
 h4.artwork-name {
@@ -145,6 +132,29 @@ h4.value {
     font-size: clamp(16px, 3vw, 20px);
 }
 
+div.music-platforms {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+a.music-icon {
+    font-size: 35px;
+}
+
+a.apple-music {
+    font-size: 33px;
+}
+
+a.music-icon:hover {
+    color: #5D9DFE;
+    transition: color 0.3s ease;
+}
+
+h4.discography-info {
+    font-weight: 400;
+}
 
 hr.artwork-bottom-line {
     position: relative;
@@ -155,50 +165,7 @@ hr.artwork-bottom-line {
     display: block;
 }
 
-/*number buttons*/
-.number-buttons {
-    display: flex;
-}
-
-.number-page-buttons {
-    display: flex;
-    gap: 10px;
-}
-
-.page-button {
-    font-family: var(--body-family);
-    color: var(--font-color);
-    border: 2px solid rgb(255, 255, 255);
-    background-color: #1a1a1a;
-    color: rgba(217, 217, 217, 1);
-    font-size: clamp(14px, 1.8vw, 18px);
-    padding: clamp(10px, 2vw, 15px) clamp(16px, 3vw, 24px);
-    cursor: pointer;
-}
-
-.page-button:hover {
-    transition: 0.5s;
-    background-color: #5D9DFE;
-}
-
-.page-button.active {
-    background-color: #ffffff;
-    color: black;
-    font-weight: 700;
-    font-size: large;
-}
-
-.page-button-icon {
-    padding: clamp(10px, 2vw, 15px) clamp(12px, 2.5vw, 17px);
-}
-
-.page-button-arrow {
-    display: inline-block;
-    transform: rotate(-90deg);
-    font-size: x-large;
-}
-
-@media (max-width:1000px) {
+@media (max-width:1024px) {
 
     /*category item*/
     a.category-item {
@@ -224,8 +191,6 @@ hr.artwork-bottom-line {
         font-size: large;
     }
 
-
-
 }
 
 @media (max-width:800px) {
@@ -236,6 +201,23 @@ hr.artwork-bottom-line {
 
     a.all-category-item {
         font-size: clamp(12px, 2.5vw, 16px);
+    }
+
+
+
+
+}
+
+
+@media (max-width:660px) {
+    div.long-artwork-name {
+        gap: 0px;
+    }
+}
+
+@media (max-width:600px) {
+    .discography-section {
+        grid-template-columns: auto;
     }
 }
 
@@ -255,11 +237,18 @@ hr.artwork-bottom-line {
         padding: 15px 35px;
     }
 
-    .discography-section {
-        grid-template-columns: auto;
-    }
-
     .artwork-nineth {
         display: block;
+    }
+}
+
+@media (max-width:320px) {
+    a.category-item {
+        font-size: clamp(14px, 2vw, 18px);
+        padding: 15px;
+    }
+
+    a.all-category-item {
+        padding: 15px 25px;
     }
 }
